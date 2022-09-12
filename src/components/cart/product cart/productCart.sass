@@ -1,0 +1,129 @@
+.d-flex 
+	display: flex 
+.align-center 
+	align-items: center 
+.flex-centerY-centerX 
+	justify-content: center 
+	align-items: center 
+.page-wrapper 
+	height: 100% 
+	display: table 
+	box-shadow: 0 0 5px #00000073
+	color: rgb(255, 255, 255)
+	
+	.page-inner 
+		display: table-cell 
+		vertical-align: middle 
+.el-wrapper 
+	width: 200px 
+	height: 250px 
+	&:hover 
+		.h-bg 
+			left: 0px 
+		.price 
+			left: 10px 
+			transform: translateY(-50%) 
+			color: #818181 
+		.add-to-cart 
+			left: 70% 
+			color: #fff 
+		.img 
+			filter: blur(40px) brightness(0.1)
+		.info-inner 
+			bottom: 140px 
+		.a-size 
+			-webkit-transition-delay: 300ms 
+			-o-transition-delay: 300ms 
+			transition-delay: 300ms 
+			bottom: 60px 
+			opacity: 1 
+	.box-down 
+		width: 100% 
+		height: 45px 
+		position: relative 
+		overflow: hidden 
+		bottom: 45px
+		background: #202832
+	.box-up 
+		width: 100% 
+		height: 100% 
+		position: relative 
+		overflow: hidden 
+		text-align: center 
+	.img 
+		width: 50% 
+		height: 40%
+		transform: translateY(50%)
+		transition: all 800ms cubic-bezier(0, 0, 0.18, 1) 
+		transition-timing-function: cubic-bezier(0, 0, 0.18, 1) 
+.h-bg 
+	transition: all 800ms cubic-bezier(0, 0, 0.18, 1) 
+	transition-timing-function: cubic-bezier(0, 0, 0.18, 1) 
+	width: 660px 
+	height: 100% 
+	background-color: #ff9900 
+	position: absolute 
+	left: -661px 
+	.h-bg-inner 
+		width: 50% 
+		height: 100% 
+		background-color: #131921 
+.info-inner 
+	transition: all 400ms cubic-bezier(0, 0, 0.18, 1) 
+	transition-timing-function: cubic-bezier(0, 0, 0.18, 1) 
+	position: absolute 
+	width: 100% 
+	bottom: 0px 
+	.p-name 
+		font-family: "PT Sans", sans-serif 
+		font-size: 18px 
+	.p-company 
+		font-family: "Lato", sans-serif 
+		font-size: 12px 
+		text-transform: uppercase 
+.info-inner .p-name,
+.info-inner .p-company 
+	display: block 
+.a-size 
+	transition: all 300ms cubic-bezier(0, 0, 0.18, 1) 
+	transition-timing-function: cubic-bezier(0, 0, 0.18, 1) 
+	position: absolute 
+	width: 100% 
+	bottom: 0px 
+	font-family: "PT Sans", sans-serif 
+	opacity: 0 
+.cart 
+	display: block 
+	position: absolute 
+	width: 100% 
+	height: 100% 
+	top: 0 
+	left: 0 
+	font-family: "Lato", sans-serif 
+	font-weight: 700 
+	cursor: pointer
+	background: rgb(0 0 0 / 19%)
+	.price 
+		transition: all 600ms cubic-bezier(0, 0, 0.18, 1) 
+		transition-timing-function: cubic-bezier(0, 0, 0.18, 1) 
+		transition-delay: 100ms 
+		display: block 
+		position: absolute 
+		top: 50% 
+		left: 50% 
+		transform: translate(-50%, -50%) 
+		font-size: 16px 
+	.add-to-cart 
+		transition: all 600ms cubic-bezier(0, 0, 0.18, 1) 
+		transition-timing-function: cubic-bezier(0, 0, 0.18, 1) 
+		transition-delay: 100ms 
+		display: block 
+		position: absolute 
+		top: 50% 
+		left: 122% 
+		transform: translate(-50%, -50%) 
+		.txt 
+			font-size: 12px 
+			letter-spacing: 0.045em 
+			text-transform: uppercase 
+			white-space: nowrap 

@@ -1,0 +1,44 @@
+.checkoutPage
+    // padding: 15px
+    .checkoutPage__breadcrumb
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 10px 20px
+        font-size: 14px
+        color: #505050
+        background: white
+        box-shadow: 0 0 5px #aaa
+        margin-bottom: 10px
+        // position: sticky
+        // top: 112px
+    .checkoutPage__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 15px
+        padding: 15px
+    .checkoutPage__betaCardWrapper
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        padding: 15px
+        background: #fefefb
+    .backToShoppingPage
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        > a
+            background: #006fff
+            padding: 5px
+            border-radius: 5px
+@media ( max-width: 500px )
+    .checkoutPage__header
+        flex-direction: column
+        gap: 20px
+    .checkoutPage__breadcrumb
+        background: #131921 !important
+        color: white !important
+        border-top: 1px solid #ffffff
+
